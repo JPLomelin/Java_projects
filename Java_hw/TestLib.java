@@ -1,32 +1,23 @@
-package sesion21;
+package sesion25;
 
 public class TestLib {
 
 	public static void main(String[] args) {
 		
-//		double x, y = 0;
+		System.out.println(Lib.average(10, 9, 8, 7, 6, 5));
+		System.out.println(Lib.average());
 		
-		/*
-		 * x = -9; try { y = 4*MiLib.squareRoot(x); } catch
-		 * (NegativeNumberFoundException e) { //e.printStackTrace();
-		 * System.out.println(e); }
-		 * 
-		 * System.out.println(y);
-		 */
+		int [] numbers = {10,20,30,40,50};
+		System.out.println(Lib.average(numbers));
 		
-//		double a = 1, b = 8, c = 3;
-//		double result;
-//		
-//		try {
-//			result = MiLib.solve(a, b, c);
-//			System.out.println("El resultado de la ecuación cuadrática es: " + result);
-//		} catch (NegativeNumberFoundException e) {
-//			System.out.println("Esa combinacion de valores en las variables no tiene solucion");
-//		}
-		
-		double x = 3.5, y = -2.3;
-		System.out.println("La magnitud del vector es: " + MiLib.magnitude(x, y));
-		
+		System.out.println("Manhattan:");
+		System.out.println(Lib.manhattan(4.5));
+		System.out.println(Lib.manhattan(3, -2));
+		System.out.println(Lib.manhattan(1, 1.4, 0.8));
+		System.out.println(Lib.manhattan(0, 0, 1, 2, 3, 4));
+		System.out.println(Lib.manhattan(1, 0, 1, 2, 3, 4));
+		System.out.println(Lib.manhattan(2, 0, 1, 2, 3, 4));
+
 	}
 
 }
